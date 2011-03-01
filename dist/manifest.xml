@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package>
+  <id>bm-slot</id>
+  <name>bm Slot</name>
+  <version>0.2-10</version>
+  <description>Simple Blogmarks client for La Distribution</description>
+  <type>application</type>
+  <need>lib-zend-framework</need>
+  <need>lib-ld</need>
+  <need>lib-limonade</need>
+  <need>css-h6e-minimal</need>
+  <need>css-ld-ui</need>
+  <install>
+      <preference type="text" label="Title" name="title" defaultValue="Blogmarks"/>
+      <preference type="text" label="Path" name="path" defaultValue="blogmarks"/>
+      <!--
+      <preference type="text" label="BlogMarks user URL" name="bmUrl" value=""/>
+      -->
+      <preference type="text" label="BlogMarks.net username" name="bmUsername" value=""/>
+  </install>
+  <configuration>
+      <preference type="text" label="Application Name" name="name"/>
+      <!--
+      <preference type="text" label="BlogMarks user URL" name="bmUrl" value=""/>
+      -->
+      <preference type="text" label="BlogMarks.net username" name="bmUsername" value=""/>
+      <preference type="range" label="Items per page" name="maxItems" min="5" max="250" step="5" defaultValue="50"/>
+  </configuration>
+  <colors>
+      <scheme>base</scheme>
+      <scheme>bars</scheme>
+      <scheme>panels</scheme>
+  </colors>
+  <!--
+  <link title="User Timeline" rel="public-feed" type="application/atom+xml" href="/feed"/>
+  <link title="Friends Timeline" rel="personal-feed" type="application/atom+xml" href="/friends/feed"/>
+  -->
+  <link rel="icon" type="image/png" href="/blogmarks-16.png"/>
+  <link rel="ld-icon" type="image/png" href="/blogmarks-48.png"/>
+</package>
